@@ -78,14 +78,14 @@ button:active {
   color: #38a1f3;
 }
 
-.fa-twitter {
-  font-size: 1.5rem; 
+#fa-twitter {
+  font-size: 1.5rem;
 }
 
 /* Loader */
 .loader {
-  border: 16px solid #f3f3f3; 
-  border-top: 16px solid #333; 
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #333;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -93,9 +93,113 @@ button:active {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
+/* Footer Section */
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  height: auto;
+  width: 100vw;
+  color: #fff;
+}
+
+.footer-content h3{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.socials a i{
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color .4s ease;
+}
+
+.socials a:hover i{
+  color: rgb(136, 255, 0);
+}
+
+.footer-content ul {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+@media (max-width:800px) {
+  .footer-content ul{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons li a {
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: 0.5s cubic-bezier(0.47, 0, 0.75, 0.72);
+  }
+  
+  .social-icons li a:hover {
+    background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 40px;
+  }
+  
+
 
 /* Media Query: Tablet or Smaller */
 @media screen and (max-width: 1000px) {
