@@ -78,7 +78,7 @@ button:active {
   color: #38a1f3;
 }
 
-.fa-twitter {
+#fa-twitter {
   font-size: 1.5rem;
 }
 
@@ -101,12 +101,13 @@ button:active {
     transform: rotate(360deg);
   }
 }
+/* Footer Section */
 footer{
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background: #111;
+  background: #333;
   height: auto;
   width: 100vw;
   color: #fff;
@@ -198,6 +199,7 @@ footer{
     font-size: 40px;
   }
   
+
 
 /* Media Query: Tablet or Smaller */
 @media screen and (max-width: 1000px) {
